@@ -1,0 +1,92 @@
+// color we need; 
+
+$lightred: #F5354C;
+$gloomyred: #63141E;
+$brown: #1A1213;
+$textcolor: #e7e7e7;
+$spaceGrey: #b5b5b5; 
+
+
+
+
+.event {
+    height: 100vh;
+    color: $textcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .logo {
+        img {
+           width: 200px;
+        }
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        .pic {
+            width: 300px;
+            height: 200px;
+            background-image: url('../../images/castel.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 400px;
+            border-radius: 30px;
+            padding: 10px 5px;
+            color: $textcolor;
+            position: relative;
+
+            .btn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+
+                .buyTicket {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    height: 30px;
+                    border-radius: 5px;
+                    color: $textcolor;
+                    background-color: $lightred;
+                    
+                    transition: all 300ms ease-in-out;
+
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $gloomyred;
+                    }
+                }
+
+                .moreInfoLink {
+                    color: $textcolor;
+                }
+            }
+        }
+
+        .moreInfo {
+            margin-top: -25px;
+            background-color: #020101;
+            z-index: -1;
+            padding: 0px 10px;
+            padding-top: 40px;
+            border-radius: 0px 0px 30px 30px;
+            h3 {
+                font-size: 1.3em;
+            }
+            h5 {
+                font-size: 1em;
+                font-weight: 300;
+            }
+            p {
+                font-weight: 100;
+            }
+        }
+    }
+}

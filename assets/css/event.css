@@ -1,0 +1,71 @@
+.event {
+  height: 100vh;
+  color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.event .logo img {
+  width: 200px;
+}
+.event .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.event .infos .pic {
+  width: 300px;
+  height: 200px;
+  background-image: url("../../images/castel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #e7e7e7;
+  position: relative;
+}
+.event .infos .pic .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.event .infos .pic .btn .buyTicket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  color: #e7e7e7;
+  background-color: #F5354C;
+  transition: all 300ms ease-in-out;
+}
+.event .infos .pic .btn .buyTicket:hover {
+  text-decoration: none;
+  background-color: #63141E;
+}
+.event .infos .pic .btn .moreInfoLink {
+  color: #e7e7e7;
+}
+.event .infos .moreInfo {
+  margin-top: -25px;
+  background-color: #020101;
+  z-index: -1;
+  padding: 0px 10px;
+  padding-top: 40px;
+  border-radius: 0px 0px 30px 30px;
+}
+.event .infos .moreInfo h3 {
+  font-size: 1.3em;
+}
+.event .infos .moreInfo h5 {
+  font-size: 1em;
+  font-weight: 300;
+}
+.event .infos .moreInfo p {
+  font-weight: 100;
+}/*# sourceMappingURL=event.css.map */

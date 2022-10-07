@@ -45,6 +45,7 @@ body {
 
 .container-fluid {
     padding: 0%;
+    overflow: hidden;
     .enter {
         margin: 0%;
         padding: 0%;
@@ -88,6 +89,7 @@ body {
 }
 
 .box {
+    overflow: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -100,9 +102,10 @@ body {
         color: $textcolor;
         text-align: justify;
         padding: 0px 20px;
+        position: relative;
         h1 {
             position: absolute;
-            top: 110vh;
+            top: -15vh;
             text-align: left;
             color: $lightred;
             font-family: 'Times New Roman', Times, serif;
@@ -117,15 +120,17 @@ body {
                 color: $lightred;
                 font-style: normal;
             }
+            &1, &2 {
+                max-width: 1000px;
+            }
             &2 {
                 margin-top: 30px;
             }
-            overflow: hidden;
             &3 {
                 display: flex;
                 align-items: center;
                 position: absolute;
-                top: 185vh;
+                bottom: -10vh;
                 margin-top: 15px;
                 &:hover {
                     cursor: pointer;
@@ -180,7 +185,63 @@ body {
 
     }
 }
+
+@media (max-height: 740px) {
+    .item2 {
+        display: none;
+    }
+}
+
+
+// next event 
+
+.nextEvent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+
+    .titleEvent {
+        h3 {
+            color: $textcolor;
+            margin-bottom: 20px;
+        }
+
+    }
+    .picEvent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        a {
+            margin-top: 25px;
+            font-size: 1.2em;
+            color: $textcolor;
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                text-decoration: none;
+                color: $lightred;
+                transform: translateY(-4px);
+            }
+        }
+    }
+}
+
+// responsive of next event 
+
+
+
+// appli page
+
 .box2 {
+    overflow: hidden;
     height: 100vh;
     background-color: $gloomyred;
     display: flex;
@@ -212,10 +273,19 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .links {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
 
 footer {
     color: $spaceGrey;
     padding: 20px 10px;
+    overflow: hidden;
+
 
     h5 {
         font-size: 1.5em;
@@ -223,7 +293,6 @@ footer {
 
     ul {
         list-style-type: none;
-        margin-left: -20px;
     }
     a {
         color: $lightred;
@@ -238,7 +307,10 @@ footer {
 
     .mainlyFooter {
         display: flex;
+        align-items: center;
         justify-content: space-around;
+        text-align: center;
+        text-align: center;
     }
     .copyright {
         display: flex;
@@ -270,4 +342,26 @@ footer {
             }
         }
     }
+}
+
+// responsive of footer 
+
+@media (max-width: 500px) {
+
+    footer {
+        h5 {
+            margin-left: 0%;
+        }
+        ul {
+            margin-left: -40px;
+        }
+    }
+
+    .mainlyFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 }

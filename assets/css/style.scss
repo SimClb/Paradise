@@ -216,7 +216,7 @@ body {
         align-items: center;
         justify-content: center;
         img {
-            width: 100%;
+            width: 75%;
             border-radius: 20px;
         }
         a {
@@ -281,6 +281,8 @@ body {
 }
 
 
+// footer 
+
 footer {
     color: $spaceGrey;
     padding: 20px 10px;
@@ -293,6 +295,9 @@ footer {
 
     ul {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     a {
         color: $lightred;
@@ -346,7 +351,7 @@ footer {
 
 // responsive of footer 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     footer {
         h5 {

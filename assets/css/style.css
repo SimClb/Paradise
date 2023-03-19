@@ -1,3 +1,7 @@
+.uselessATD {
+  display: none;
+}
+
 element {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -16,16 +20,18 @@ html {
 
 body {
   background-color: #1A1213;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.burgerMenu {
-  position: absolute;
-  width: 100vh;
-  color: #F5354C;
-  position: fixed;
+h1, h3 {
+  font-family: "Times New Roman", Times, serif;
 }
-.burgerMenu nav {
-  background-color: #fff;
+
+.h3MokeUp {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #b5b5b5;
+  font-weight: 300;
+  margin: auto 33px;
 }
 
 .container-fluid {
@@ -52,6 +58,11 @@ body {
   width: max-content;
   margin: auto;
   transition: all ease-in-out 300ms;
+}
+.container-fluid .enter .linkEnter img {
+  width: 190px;
+  height: 99, 19px;
+  margin: 25px auto;
 }
 .container-fluid .enter .linkEnter i {
   font-size: 2em;
@@ -85,20 +96,23 @@ body {
   flex-direction: column;
   align-items: center;
   color: #e7e7e7;
-  text-align: justify;
+  text-align: center;
   padding: 0px 20px;
   position: relative;
 }
 .box .speech h1 {
   position: absolute;
-  top: -15vh;
+  top: -20vh;
   text-align: left;
   color: #F5354C;
   font-family: "Times New Roman", Times, serif;
 }
+.box .speech .item {
+  position: relative;
+}
 .box .speech .item h3 {
-  text-align: left;
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .box .speech .item em {
   color: #F5354C;
@@ -114,7 +128,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: -10vh;
+  bottom: -20vh;
   margin-top: 15px;
 }
 .box .speech .item3:hover {
@@ -166,6 +180,22 @@ body {
 @media (max-height: 740px) {
   .item2 {
     display: none;
+  }
+}
+@media (max-height: 950px) {
+  .box .speech h1 {
+    top: -15vh;
+  }
+  .box .speech .item3 {
+    bottom: -16vh;
+  }
+}
+@media (max-height: 860px) {
+  .box .speech h1 {
+    top: -10vh;
+  }
+  .box .speech .item3 {
+    bottom: -12vh;
   }
 }
 .nextEvent {
@@ -250,22 +280,28 @@ footer {
   color: #b5b5b5;
   padding: 20px 10px;
   overflow: hidden;
+  font-family: arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer .footerRow {
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
 }
 footer .col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 15px auto;
 }
 footer h5 {
-  font-size: 1.5em;
+  font-size: 1.4em;
+  margin-bottom: 15px;
 }
 footer a {
   color: #F5354C;
-  text-decoration: underline;
   transition: all 100ms ease-in-out;
   font-size: 1.1em;
+  margin: 10px auto;
 }
 footer a:hover {
   color: #63141E;

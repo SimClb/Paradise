@@ -1,8 +1,9 @@
+/* THE ANIMATION COLORS OF THE TEXT IS IN SCSS */
+
 body
  {
    margin: 0;
    padding: 0;
-   font-family: "Avenir Next", "Avenir", sans-serif;
  }
  
  #menuToggle
@@ -18,6 +19,7 @@ body
    user-select: none;
  }
  
+
  #menuToggle a
  {
    text-decoration: none;
@@ -90,7 +92,10 @@ body
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   /*background: #F5354C;*/
+   background-color: #E7E7E7;
+  
+
  }
  
  /*
@@ -119,10 +124,11 @@ body
    position: absolute;
    width: max-content;
    margin: -100px 0 0 -50px;
-   padding: 50px 50px 20px 50px;
+   padding: 50px 30px 20px 45px;
    padding-top: 125px;
    
-   background: #ededed;
+   /*background: #edededc0;*/
+   background-color: #f5354b3f;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -132,11 +138,17 @@ body
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
- 
+
  #menu li
  {
    padding: 10px 0;
-   font-size: 22px;
+   font-size: 25px;
+   font-weight: 300;
+   color: #E7E7E7;
+   transition: all 200ms ease-in-out;
+ }
+ #menu li:hover {
+  color: #63141E;
  }
  
  /*
